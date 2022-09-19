@@ -96,7 +96,7 @@ restriccion.direccion
 # 5x1 + 10x2  >= 20             20     (3)
 lado_derecho.restriccion <- c(30, 25, 20)
 lado_derecho.restriccion
-# Se ejecuta la instrucción para mostrar el resultado que maximize la función
+# Se ejecuta la instrucción para mostrar el resultado que minimize la función
 lp(direction = "min", objective.in = funcion_objetivo, const.mat =restriciones_derecho, const.dir = restriccion.direccion, const.rhs = lado_derecho.restriccion, int.vec = c(1, 2, 3, 4, 5), all.int = T)
 
 # Se ejecuta la instrucción para mostrar los valores de x1 y x2.
